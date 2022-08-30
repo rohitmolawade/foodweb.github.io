@@ -1,0 +1,210 @@
+/* Navigation Bar */
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Baloo Bhai 2', cursive; */
+}
+html{
+    scroll-behavior:smooth;
+}
+/* Navigation bar */
+
+.navigation{
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+/* backround colour */
+.navigation::before{
+    content: '';
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+ 
+   /* Logo */
+.logo{
+    margin: 5px 47px;
+
+}
+.navigation img {
+    height: 60px;
+    width: 61px;
+}
+
+/* navigation element  */
+
+.navigation ul{
+    display: flex;
+
+}
+.navigation ul li{
+    list-style: none;
+
+}
+.navigation ul li a{
+    text-decoration: none;
+    padding: 8px 23px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+
+}
+.navigation ul li a:hover{
+    text-decoration: none;
+    padding: 5px 23px;
+    background-color: white;
+
+    color:black;
+    border-radius: 20px;
+    font-size: 1.2rem;
+
+}
+/* Section part  */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 439px;
+}
+#home::before{
+    content: '';
+    background: url(../img/bg.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 401px;
+    z-index: -1;
+    opacity: 0.8;
+}
+#home h1{
+    color: white;
+}
+#home p{
+    font-size: 1.1rem;
+    color: white;
+    /* padding: 3px 20px; */
+    margin: 6px 2px;
+
+}
+#home .btn{
+    padding: 5px 14px;
+    border-radius: 19px;
+    font-size: 1.1rem;
+    margin: 14px 9px;
+    cursor: pointer;
+}
+/* utility */
+.h-primary{
+    font-size: 3rem;
+    padding: 28px 13px;
+}
+.h-secondary{
+    text-align: center;
+    font-size: 2.3rem;
+
+}
+/* Service */
+#service-container{
+    margin: 10px 9px;
+}
+#service{
+    display: flex;
+    margin: 33px 1px;
+}
+#service .box img{
+    
+    height: 114px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+}
+#service .box{
+    border:brown solid 2px;
+    background-color: rgb(219, 215, 215);
+    padding: 16px 9px;
+    border-radius: 15px;
+    margin: 10px 4px;
+
+} 
+#service .box h2{
+    text-align: center;
+    padding: 4px 3px;
+    font-size: 1.4rem;
+}
+#service .box p{
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 5px 24px;
+
+}
+/* Client Section */
+#client-section{
+    position: relative;
+}
+#client-section h1{
+    padding: 17px 12px;
+}
+#client-section::before{
+    content: '';
+    background: url('../img/bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+
+}
+.client{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.client-logo img{
+   height: 75px;
+    /* margin: 5px; */
+   padding: 9px 11px;
+}
+
+
+ /* Contant Us  */
+
+#contact{
+    position: relative;
+   
+
+}
+.contact-box{
+    padding-bottom: 9px;
+}
+#contact::before{
+    content: '';
+    background:#5c4d4d78;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+.contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.from-group input,.from-group textarea{
+    display: block;
+    padding: 10px 152px;
+}
+.from-group label{
+    padding: 7px 3px;
+}
